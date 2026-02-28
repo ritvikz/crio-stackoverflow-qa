@@ -81,13 +81,19 @@ public class TestCases {
 
         driver.get("https://stackoverflow.com");
 
-        driver.findElement(By.cssSelector("input[name='q']"))
+
+        System.out.println(driver.getTitle());
+        System.out.println(driver.getCurrentUrl());
+
+        driver.findElement(By.cssSelector("input[placeholder='Search…']"))
                 .sendKeys("Python list comprehension" + Keys.ENTER);
 
         Thread.sleep(3000);
 
         List<WebElement> results =
                 driver.findElements(By.cssSelector(".s-post-summary"));
+
+                driver.get("https://stackoverflow.com/search?q=Python+list+comprehension");
 
         if(results.size() > 0)
             System.out.println("PASS");
