@@ -75,24 +75,25 @@ public class TestCases {
     // ------------------------------------------------
     // TestCase02 → Search and verify results
     // ------------------------------------------------
-    public void testCase02() {
+    public void testCase02() throws InterruptedException {
 
         System.out.println("Start TestCase02");
-    
-        driver.get("https://stackoverflow.com/search?q=Python+list+comprehension");
-    
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
-    
-       // wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".s-post-summary")));
-    
+
+        driver.get("https://stackoverflow.com");
+
+        driver.findElement(By.cssSelector("input[name='q']"))
+                .sendKeys("Python list comprehension" + Keys.ENTER);
+
+        Thread.sleep(3000);
+
         List<WebElement> results =
                 driver.findElements(By.cssSelector(".s-post-summary"));
-    
+
         if(results.size() > 0)
             System.out.println("PASS");
         else
             System.out.println("FAIL");
-    
+
         System.out.println("End TestCase02\n");
     }
 
