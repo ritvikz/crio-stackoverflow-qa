@@ -1,23 +1,20 @@
 package demo;
 import java.net.MalformedURLException;
 
-
 public class App {
     public void getGreeting() throws InterruptedException, MalformedURLException {
-        
-        // This is to remove unnecessary warnings from your console
+
         System.setProperty("java.util.logging.config.file", "logging.properties");
-        
-        TestCases tests = new TestCases(); // Initialize your test class
 
-        //TODO: call your test case functions one after other here
+        TestCases tests = new TestCases();
 
+        // Calling all test cases
         tests.testCase01();
+        tests.testCase02();
+        tests.testCase03();
+        tests.testCase04();
 
-        //END Tests
-
-
-        tests.endTest(); // End your test by clearning connections and closing browser
+        tests.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {

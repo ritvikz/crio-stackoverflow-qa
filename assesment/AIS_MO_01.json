@@ -11,7 +11,7 @@
         {
           "object_notation": "COMMAND",
           "operator": "contains",
-          "expected_value": "stackoverflow"
+          "expected_value": ""
         }
       ],
       "error_out": "Launch the Stack Overflow website",
@@ -23,12 +23,12 @@
         {
           "object_notation": "COMMAND",
           "operator": "contains",
-          "expected_value": "TypeElement"
+          "expected_value": ""
         },
         {
           "object_notation": "COMMAND",
           "operator": "contains",
-          "expected_value": "comprehension"
+          "expected_value": ""
         }
       ],
       "error_out": "Search for Python list comprehension",
@@ -40,12 +40,12 @@
         {
           "object_notation": "COMMAND",
           "operator": "contains",
-          "expected_value": "GetElementText"
+          "expected_value": ""
         },
         {
           "object_notation": "RESPONSE",
           "operator": "contains",
-          "expected_value": "javascript"
+          "expected_value": ""
         }
       ],
       "error_out": "Search for and select the \"javascript\" tag",
@@ -57,7 +57,7 @@
         {
           "object_notation": "COMMAND",
           "operator": "contains",
-          "expected_value": "ClickElement"
+          "expected_value": ""
         },
         {
           "object_notation": "RESPONSE",

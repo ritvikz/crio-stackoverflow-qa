@@ -1,0 +1,181 @@
+[1772262838.742][INFO]: Starting ChromeDriver 132.0.6834.159 (2d77d3fc4452661469b78f115e0aed4d71269739-refs/branch-heads/6834@{#4408}) on port 31897
+[1772262838.743][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1772262838.757][INFO]: ChromeDriver was started successfully on port 31897
+[1772262839.334][INFO]: [be1c88a35d55e9433e2b73e14801713f] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--remote-allow-origins=*", "--user-data-dir=/tmp/chrome-1772262838308" ],
+            "extensions": [  ]
+         },
+         "goog:loggingPrefs": {
+            "browser": "ALL",
+            "driver": "ALL"
+         }
+      } ]
+   }
+}
+[1772262839.334][INFO]: Browser search. Trying... /home/crio-user/.cache/selenium/chromedriver/linux64/132.0.6834.159/chrome
+[1772262839.339][INFO]: Browser search. Trying... /home/crio-user/.cache/selenium/chromedriver/linux64/132.0.6834.159/chrome
+[1772262839.342][INFO]: Browser search. Trying... /home/crio-user/.cache/selenium/chromedriver/linux64/132.0.6834.159/google-chrome
+[1772262839.346][INFO]: Browser search. Trying... /home/crio-user/.cache/selenium/chromedriver/linux64/132.0.6834.159/chromium
+[1772262839.349][INFO]: Browser search. Trying... /home/crio-user/.cache/selenium/chromedriver/linux64/132.0.6834.159/chromium-browser
+[1772262839.353][INFO]: Browser search. Trying... /usr/local/sbin/chrome
+[1772262839.356][INFO]: Browser search. Trying... /usr/local/bin/chrome
+[1772262839.360][INFO]: Browser search. Trying... /usr/sbin/chrome
+[1772262839.363][INFO]: Browser search. Trying... /usr/bin/chrome
+[1772262839.367][INFO]: Browser search. Trying... /sbin/chrome
+[1772262839.370][INFO]: Browser search. Trying... /bin/chrome
+[1772262839.373][INFO]: Browser search. Trying... /opt/google/chrome/chrome
+[1772262839.377][INFO]: Browser search. Found at  /opt/google/chrome/chrome
+[1772262839.381][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1772262839.384][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1772262839.388][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1772262839.391][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1772262839.394][INFO]: Launching chrome: /opt/google/chrome/chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --headless=new --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/chrome-1772262838308
+[1772262839.901][INFO]: resolved localhost to ["127.0.0.1"]
+[1772262840.048][INFO]: [be1c88a35d55e9433e2b73e14801713f] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "132.0.6834.159",
+      "chrome": {
+         "chromedriverVersion": "132.0.6834.159 (2d77d3fc4452661469b78f115e0aed4d71269739-refs/branch-heads/6834@{#4408})",
+         "userDataDir": "/tmp/chrome-1772262838308"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:45077"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "linux",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "be1c88a35d55e9433e2b73e14801713f"
+}
+[1772262840.837][INFO]: [be1c88a35d55e9433e2b73e14801713f] COMMAND MaximizeWindow {
+}
+[1772262840.837][INFO]: Waiting for pending navigations...
+[1772262840.840][INFO]: Done waiting for pending navigations. Status: ok
+[1772262840.868][INFO]: Waiting for pending navigations...
+[1772262840.873][INFO]: Done waiting for pending navigations. Status: ok
+[1772262840.874][INFO]: [be1c88a35d55e9433e2b73e14801713f] RESPONSE MaximizeWindow {
+   "height": 1160,
+   "width": 1560,
+   "x": 10,
+   "y": 10
+}
+[1772262840.902][INFO]: [be1c88a35d55e9433e2b73e14801713f] COMMAND SetTimeouts {
+   "implicit": 30000
+}
+[1772262840.902][INFO]: [be1c88a35d55e9433e2b73e14801713f] RESPONSE SetTimeouts
+[1772262840.914][INFO]: [be1c88a35d55e9433e2b73e14801713f] COMMAND Navigate {
+   "url": "https://stackoverflow.com"
+}
+[1772262840.914][INFO]: Waiting for pending navigations...
+[1772262840.915][INFO]: Done waiting for pending navigations. Status: ok
+[1772262840.998][INFO]: Waiting for pending navigations...
+[1772262841.274][INFO]: Done waiting for pending navigations. Status: ok
+[1772262841.274][INFO]: [be1c88a35d55e9433e2b73e14801713f] RESPONSE Navigate
+[1772262841.283][INFO]: [be1c88a35d55e9433e2b73e14801713f] COMMAND GetUrl {
+}
+[1772262841.283][INFO]: Waiting for pending navigations...
+[1772262841.289][INFO]: Done waiting for pending navigations. Status: ok
+[1772262841.295][INFO]: Waiting for pending navigations...
+[1772262841.297][INFO]: Done waiting for pending navigations. Status: ok
+[1772262841.301][INFO]: [be1c88a35d55e9433e2b73e14801713f] RESPONSE GetUrl "https://stackoverflow.com/"
+[1772262841.309][INFO]: [be1c88a35d55e9433e2b73e14801713f] COMMAND Navigate {
+   "url": "https://stackoverflow.com/search?q=Python+list+comprehension"
+}
+[1772262841.309][INFO]: Waiting for pending navigations...
+[1772262841.311][INFO]: Done waiting for pending navigations. Status: ok
+[1772262841.333][INFO]: Waiting for pending navigations...
+[1772262841.520][INFO]: Done waiting for pending navigations. Status: ok
+[1772262841.520][INFO]: [be1c88a35d55e9433e2b73e14801713f] RESPONSE Navigate
+[1772262841.554][INFO]: [be1c88a35d55e9433e2b73e14801713f] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".s-post-summary"
+}
+[1772262841.554][INFO]: Waiting for pending navigations...
+[1772262841.555][INFO]: Done waiting for pending navigations. Status: ok
+[1772262871.574][INFO]: Waiting for pending navigations...
+[1772262871.575][INFO]: Done waiting for pending navigations. Status: ok
+[1772262871.581][INFO]: [be1c88a35d55e9433e2b73e14801713f] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".s-post-summary"}
+  (Session info: chrome=132.0.6834.159)
